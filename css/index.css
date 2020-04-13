@@ -155,6 +155,11 @@ p {
   font-size: 1.4rem;
   font-family: 'Dosis', sans-serif;
 }
+h2 {
+  color: navy;
+  font-size: 1.4rem;
+  font-family: 'Roboto Mono', monospace;
+}
 .container {
   display: flex;
 }
@@ -176,12 +181,14 @@ header {
 header h1 {
   font-size: 4rem;
   font-family: 'Roboto Mono', monospace;
+  border-bottom: 2px solid cornflowerblue;
+  width: 100%;
 }
 header p {
   padding: 2%;
 }
 .topNav {
-  width: 80%;
+  width: 50%;
 }
 .topNav nav {
   display: flex;
@@ -205,10 +212,6 @@ header p {
   flex-direction: column;
   align-items: center;
 }
-.mySkills h2 {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1.6rem;
-}
 /*side bar section*/
 .side-bar {
   width: 20%;
@@ -223,4 +226,11 @@ img {
   border-left: 2px solid cornflowerblue;
   padding-bottom: 3%;
   padding-left: 3%;
+}
+.about h2 {
+  text-align: center;
+  color: navy;
+  font-size: 1.4rem;
+  font-family: 'Roboto Mono', monospace;
+  padding: 4%;
 }

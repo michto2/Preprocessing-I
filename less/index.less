@@ -57,32 +57,87 @@ html, body {
 	height: 100%;
 }
 
-header {
-	height: 20vh;
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto+Mono:wght@500&display=swap');
+
+/* font-family: 'Dosis', sans-serif;
+font-family: 'Roboto Mono', monospace;*/
+
+/*variable*/
+@main-font: 'Dosis', sans-serif;
+@heading-font: 'Roboto Mono', monospace;
+
+/*mixin*/
+
+
+
+/*less code*/
+
+.container {
 	display: flex;
+}
+
+.main-content {
+	background: white;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	padding: 10%;
+}
+
+ header {
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
+	background: white;
+
 
 	h1 {
 		font-size: 4rem;
+		font-family: @heading-font;
+	}
+
+	p {
+		font-size: 1.4rem;
+		font-family: @main-font;
+		padding: 2%;
 	}
 }
 
+.topNav {
+	width: 80%;
+}
 
-/*.container {
+.topNav nav {
 	display: flex;
-	height: 100%;
-}*/
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 10%;
 
+	a {
+		border: 2px lightsteelblue solid;
+		font-size: 1.6rem;
+		color: black;
+		padding: 2%;
+		text-decoration: none;
+
+		&:hover {
+			color:steelblue;
+		}
+	}
+}
+	
 .side-bar {
 	width: 20%;
 	display: flex;
-	background: lightgrey;
-	padding: 2% 2%;
+	background: lightsteelblue;
+	/*padding: 2% 2%;*/
 }
 
 img {
 	width: 70%;
-	height: 30%;
+	height: 27%;
+	padding-top: 10%;
 }
 
 .about {
@@ -92,28 +147,14 @@ img {
 	
 }
 
-.main-content {
-	background: orange;
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	padding: 10%;
-	
+
+
+.mySkills {
+	h2 {
+		font-family: @heading-font;
+	}
 }
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto+Mono:wght@500&display=swap');
-
-/* font-family: 'Dosis', sans-serif;
-font-family: 'Roboto Mono', monospace;*/
-
-/*variable*/
-
-
-/*mixin*/
-
-
-
-/*less code*/
 

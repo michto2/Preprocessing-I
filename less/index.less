@@ -59,102 +59,107 @@ html, body {
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto+Mono:wght@500&display=swap');
 
-/* font-family: 'Dosis', sans-serif;
-font-family: 'Roboto Mono', monospace;*/
-
-/*variable*/
+  /*variable*/
+@main-color: cornflowerblue;
 @main-font: 'Dosis', sans-serif;
 @heading-font: 'Roboto Mono', monospace;
 
-/*mixin*/
-
-
-
-/*less code*/
-
-.container {
-	display: flex;
+	/*mixin*/
+.center(){
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.main-content {
+  /*less code*/
+
+  p { 
+	font-size: 1.4rem;
+	font-family: @main-font;
+}
+
+  .container {
+	display: flex;
+  }
+
+ /*main content */
+  .main-content {
 	background: white;
 	width: 80%;
 	display: flex;
 	flex-direction: column;
 	padding: 10%;
-}
+  }
 
- header {
+  header {
 	height: 50vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background: white;
 
-
 	h1 {
-		font-size: 4rem;
-		font-family: @heading-font;
+	font-size: 4rem;
+	font-family: 'Roboto Mono', monospace;
 	}
-
 	p {
-		font-size: 1.4rem;
-		font-family: @main-font;
-		padding: 2%;
+	padding: 2%;
 	}
-}
+  }
+ // closes header
 
-.topNav {
+  .topNav {
 	width: 80%;
-}
+  }
 
-.topNav nav {
+  .topNav nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 10%;
+		 
+		a {
+	border: 2px lightsteelblue solid;
+	font-size: 1.3rem;
+	color: black;
+	padding: 2%;
+	text-decoration: none;
+	border-radius: 4px;
 
-	a {
-		border: 2px lightsteelblue solid;
-		font-size: 1.6rem;
-		color: black;
-		padding: 2%;
-		text-decoration: none;
-
-		&:hover {
-			color:steelblue;
+	&:hover {
+		color:@main-color;
 		}
 	}
-}
-	
-.side-bar {
-	width: 20%;
-	display: flex;
-	background: lightsteelblue;
-	/*padding: 2% 2%;*/
-}
+  }
 
-img {
-	width: 70%;
-	height: 27%;
-	padding-top: 10%;
-}
-
-.about {
+  .about {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
-}
+  }
 
-
-
-.mySkills {
-	h2 {
+  .mySkills 
+  		h2 {
 		font-family: @heading-font;
-	}
-}
+		font-size: 1.6rem;
+  }
 
+  /*side bar section*/
+  .side-bar {
+	width: 20%;
+	display: flex;
+	background: lightsteelblue;
+  }
 
+  img {
+	width: 70%;
+	height: 27%;
+	padding-top: 5%;
+	border-bottom: 2px solid cornflowerblue;
+	border-left: 2px solid cornflowerblue;
+	padding-bottom: 3%;
+	padding-left: 3%;
+  }
 
-
+  
+  

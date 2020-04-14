@@ -214,7 +214,7 @@ ul {
 }
 @media (max-width: 500px) {
   .main-content {
-    background: steelblue;
+    background: lightsteelblue;
     max-width: 80%;
   }
 }
@@ -335,7 +335,7 @@ header p {
 .side-bar {
   width: 20%;
   display: flex;
-  background: lightsteelblue;
+  background: steelblue;
   /*closes media query*/
 }
 @media (max-width: 500px) {
